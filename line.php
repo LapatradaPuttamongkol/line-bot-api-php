@@ -23,7 +23,7 @@ if ( sizeof($request_array['events']) > 0 )
 		$text = $event['message']['text'];
 		
 	   if($text == "ชื่ออะไร" || $text == "ชื่ออะไรคะ" || $text == "ชื่ออะไรครับ" || $text == "ชื่อ" || $text == "ชื่อไร"){
-   $reply_message = 'ชื่อของฉัน คือ Hathaikan';
+   $reply_message = 'ชื่อของฉัน คือ BOTME';
   }
 		//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
