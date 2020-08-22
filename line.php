@@ -41,6 +41,7 @@ if ( sizeof($request_array['events']) > 0 )
      
      $reply_message = $result;
      $reply_message = 'ติดเชื้อสะสม '. $obj->{'Confirmed'}.'คน';
+	$reply_message +='\r\n รักษาหาายแล้ว '. $obj->{'NewConfirmed'}.'คน';
     }
 		//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
