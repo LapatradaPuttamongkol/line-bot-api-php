@@ -26,6 +26,14 @@ if ( sizeof($request_array['events']) > 0 )
    $reply_message = 'ชื่อของฉัน คือ BOTME';
   }
 	   
+	   if($text == "ใครคือผู้พัฒนาบอท" || $text == "ผู้สร้างบอทชื่ืออะไรครับ" || $text == "ผู้สร้างบอทชื่ืออะไรคะ" || $text == "ใครคือผู้พัฒนาบอทคะ" || $text == "ใครคือผู้พัฒนาบอทครับ"){
+   $reply_message = 'ชื่อผู้สร้างฉัน คือ ลภัสรดา พุทธมงคล (Lapatrada Puttamnogkol)';
+  }
+	   
+	    if($text == "ขอรหัสนิสิตหน่อยสิ" || $text == "ขอรหัสนิสิตหน่อยครับ" || $text == "ขอรหัสนิสิตหน่อยสิคะ" || $text == "ขอรหัสนิสิตหน่อยสิบอท" || $text == "ขอรหัสนิสิตผู้สร้างหน่อยสิบอท"){
+   $reply_message = 'ชื่อผู้สร้างฉัน คือ ลภัสรดา พุทธมงคล (Lapatrada Puttamnogkol)';
+  }
+	   
 	    if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
      $url = 'https://covid19.th-stat.com/api/open/today';
      $ch = curl_init($url);
